@@ -57,7 +57,22 @@ export default function Capabilities() {
         </div>
 
         <FadeInView direction="up" className="bg-surface rounded-xl shadow-[0_0_8px_rgba(0,0,0,0.04)] border border-outline-variant overflow-hidden">
-          <div className="overflow-x-auto">
+          {/* Mobile: card layout */}
+          <div className="block md:hidden divide-y divide-outline-variant">
+            {capabilities.map((row) => (
+              <div key={row.material} className="p-4 space-y-2">
+                <h4 className="font-semibold text-primary">{row.material}</h4>
+                <div className="grid grid-cols-2 gap-2 text-sm text-on-surface-variant">
+                  <div><span className="font-medium text-on-surface">Thickness:</span> {row.thickness}</div>
+                  <div><span className="font-medium text-on-surface">Size:</span> {row.size}</div>
+                  <div><span className="font-medium text-on-surface">Print:</span> {row.print}</div>
+                  <div><span className="font-medium text-on-surface">Lead Time:</span> {row.leadTime}</div>
+                </div>
+              </div>
+            ))}
+          </div>
+          {/* Desktop: table layout */}
+          <div className="hidden md:block overflow-x-auto">
             <table className="w-full text-left border-collapse min-w-[640px]">
               <thead>
                 <tr className="bg-primary text-on-primary text-sm font-semibold uppercase tracking-widest">

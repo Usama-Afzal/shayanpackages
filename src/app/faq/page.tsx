@@ -164,7 +164,7 @@ export default function FaqPage() {
         </FadeInView>
 
         {/* Bottom CTA */}
-        <FadeInView direction="up" delay={0.3} className="w-full max-w-4xl mt-24 bg-surface-container-high rounded-xl p-12 text-center flex flex-col items-center shadow-[0_0_8px_rgba(0,0,0,0.04)]">
+        <FadeInView direction="up" delay={0.3} className="w-full max-w-4xl mt-24 bg-surface-container-high rounded-xl p-8 md:p-12 text-center flex flex-col items-center shadow-[0_0_8px_rgba(0,0,0,0.04)]">
           <h2 className="text-3xl font-bold text-on-surface mb-4">
             Still have questions?
           </h2>

@@ -11,7 +11,7 @@ const industries = [
 
 export default function CtaStrip() {
   return (
-    <section className="bg-surface-container-high py-16 md:py-20 px-margin-mobile md:px-margin-desktop border-y border-outline-variant">
+    <section className="bg-surface-container-high py-section-gap-mobile md:py-section-gap-desktop px-margin-mobile md:px-margin-desktop border-y border-outline-variant">
       <div className="max-w-container-max mx-auto text-center">
         <h2 className="text-2xl md:text-4xl font-bold text-on-surface mb-3">
           Trusted Across Industries

@@ -220,7 +220,7 @@ export default function AboutPage() {
       </section>
 
       {/* Leadership */}
-      <section className="py-16 bg-surface-container-lowest border-t border-outline-variant">
+      <section className="py-section-gap-mobile md:py-section-gap-desktop bg-surface-container-lowest border-t border-outline-variant">
         <div className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop flex flex-col md:flex-row items-center justify-between">
           <div className="md:max-w-2xl mb-8 md:mb-0 text-center md:text-left">
             <h3 className="text-2xl font-semibold text-on-surface mb-2">
@@ -257,7 +257,7 @@ export default function AboutPage() {
             title="Visit Our Facility"
             description="Located in the heart of Pakistan's industrial zone — S.I.T.E. Industrial Area, Karachi."
           />
-          <div className="rounded-xl overflow-hidden border border-outline-variant h-[400px] shadow-[0_0_8px_rgba(0,0,0,0.04)]">
+          <div className="rounded-xl overflow-hidden border border-outline-variant h-[300px] md:h-[400px] shadow-[0_0_8px_rgba(0,0,0,0.04)]">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d115966.04885942816!2d66.97637910909615!3d24.879072048141977!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3e1a1a1a1b%3A0x1a1a1a1a1a1a1a1a!2sS.I.T.E.%20Industrial%20Area%2C%20Karachi!5e0!3m2!1sen!2s!4v1"
               width="100%"

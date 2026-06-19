@@ -24,11 +24,13 @@ export default function TrustBar() {
 
   return (
     <section className="bg-primary py-12">
-      <StaggerContainer className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-white/20">
-        {items.map((item) => (
+      <StaggerContainer className="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop grid grid-cols-1 md:grid-cols-3 text-center">
+        {items.map((item, idx) => (
           <StaggerItem
             key={item.title}
-            className="flex flex-col items-center gap-3 pt-6 md:pt-0"
+            className={`flex flex-col items-center gap-3 py-6 md:py-0 md:pt-0 ${
+              idx < items.length - 1 ? "border-b border-white/20 md:border-b-0 md:border-r" : ""
+            }`}
           >
             <span className="material-symbols-outlined text-5xl text-white mb-2">
               {item.icon}

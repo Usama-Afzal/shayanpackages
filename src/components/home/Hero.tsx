@@ -50,7 +50,7 @@ export default function Hero() {
           </FadeInView>
 
           <FadeInView direction="up" delay={0.65}>
-            <div className="grid grid-cols-3 gap-6 pt-8 border-t border-outline-variant">
+            <div className="grid grid-cols-3 gap-4 sm:gap-6 pt-8 border-t border-outline-variant">
               <div>
                 <div className="text-2xl font-semibold text-primary">500+</div>
                 <div className="text-xs text-on-surface-variant font-medium">

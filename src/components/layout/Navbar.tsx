@@ -77,7 +77,7 @@ export default function Navbar() {
           animate={{ opacity: 1, height: "auto" }}
           exit={{ opacity: 0, height: 0 }}
           transition={{ duration: 0.3, ease: [0.25, 0.46, 0.45, 0.94] }}
-          className="md:hidden border-t border-outline-variant bg-surface-container-lowest px-margin-mobile overflow-hidden"
+          className="md:hidden border-t border-outline-variant bg-surface-container-lowest px-margin-mobile overflow-y-auto max-h-[calc(100vh-80px)]"
         >
           <div className="pb-8 pt-4 flex flex-col gap-4">
           {NAV_ITEMS.map((item) => (
